@@ -1,0 +1,67 @@
+#div_mAdmin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+#div_mAdmin p{
+    padding: 1%;
+    border-radius: 20px;
+}
+
+#div_mAdmin p:hover{
+    background-color: lightpink;
+    color: black;
+}
+
+#div_tabla{
+    color: black;
+    background-color: silver;
+    margin: 3%;
+    padding: 2%;
+    box-shadow: -5px 10px 25px 3px black;
+}
+
+#mostrar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+#mostrar p:hover{
+    cursor: pointer;
+}
+
+#div_ordenar{
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#div_ordenar input{
+    padding: 2%;
+}
+
+#tabla_insert, #tabla_update, #tabla_delete{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+caption{
+    font-weight: bold;
+}
+
+th, td{
+    padding: 3%;
+}
+
+th{
+    background-color: #212121;
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: gray;
+}

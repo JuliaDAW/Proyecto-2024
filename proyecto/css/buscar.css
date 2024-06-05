@@ -1,0 +1,16 @@
+#id_filtros{
+    margin-bottom: 3%;
+    border: 5px solid transparent;
+    padding: 10%;
+    background: linear-gradient(50deg, transparent, gray);
+}
+
+select{
+    width: 50%;
+    height: 50%;
+}
+
+#div_mArt, #div_mAlb, #div_mCan{
+    margin-top: 5%;
+    border: 1px solid transparent;
+}

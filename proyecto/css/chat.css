@@ -1,0 +1,66 @@
+.contenido{
+    margin: 0 20%;
+    position: relative;
+    height: 63vh;
+}
+
+#div_conversacion{
+    background: linear-gradient(45deg, transparent, lightcoral);
+    border: 2px solid;
+    padding: 2%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    word-wrap: break-word;
+}
+
+.enviados{
+    float: right;
+    width: 60%;
+    align-items: right;
+    margin-bottom: 1em;
+    text-align: right;
+    background-color: lightpink;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.recibidos{
+    clear: right;
+    width: 60%;
+    margin-bottom: 1em;
+    background-color: lightcoral;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+#div_escribir{
+    padding: 1%;
+    margin: 0 20%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 5em;
+    width: 58%;
+}
+
+#div_escribir #form_mensajes{
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+    height: 3em;
+    width: 83%;
+    border-radius: 50px;
+    padding: 2%;
+}
+
+label img{
+    width: 10%;
+}
+
+label img:hover{
+    cursor: pointer;
+}

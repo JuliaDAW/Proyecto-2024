@@ -1,0 +1,87 @@
+#div_mArt, #div_mAlb{
+    margin-bottom: 5%;
+    border: 1px solid transparent;
+}
+
+#id_texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#id_texto p:hover{
+    cursor: pointer;
+}
+
+.div_formularios{
+    margin-top: 3%;
+    width: 100%;
+    padding: 2%;
+    border: 1px solid;
+}
+
+.info, .info2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+input, textarea{
+    margin: 2%;
+}
+
+input[type=text]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: white;
+}
+
+textarea{
+    resize: none;
+    width: 50%;
+    height: 10em;
+}
+
+textarea::placeholder{
+    text-align: center;
+    font-size: x-large;
+    padding-top: 15%;
+}
+
+#letraduccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+#div_letra, #div_traduccion{
+    width: 45%;
+    margin: 2%;
+}
+
+#letraduccion textarea{
+    padding: 2%;
+    width: 95%;
+    height: 20em;
+}
+
+input[type=button]{
+    background-color: gray;
+    margin-top: 3%;
+    padding: 2%;
+    width: 95%;
+    transition: 0.25s all;
+    font-weight: bold;
+}
+
+input[type=button]:hover{
+    cursor: pointer;
+    background: linear-gradient(50deg, lightcoral, lightpink);
+    box-shadow: -5px 3px 10px 3px black;
+}
+
+img{
+    width: 100%;
+    box-shadow: -5px 3px 10px 3px black;
+}

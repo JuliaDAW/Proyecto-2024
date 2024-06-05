@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #212121;
+    color: white;
+    font-family: system-ui;
+}
+
+/*Cabecera*/
+header{
+    background: linear-gradient(45deg, lightcoral, lightpink);
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 25px 3px black;
+}
+
+.header1{
+    width: 20%;
+}
+
+.header1, .header3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header1 p, .header3 p{
+    margin: 0;
+}
+
+.header3I{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header3{
+    width: 17%;
+}
+
+#id_busqueda{
+    border-radius: 45px;
+    padding: 10px;
+}
+
+#id_buscar svg{
+    width: 25px;
+    color: white;
+    transition: 0.25s all;
+}
+
+#id_buscar svg:hover{
+    cursor: pointer;
+    color: #121212;
+}
+/*Fin cabecera*/
+
+/*Lista artistas, álbumes, canciones*/
+.viCanciones, .viAlbumes, .viArtistas{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid transparent;
+    background: linear-gradient(50deg, black, transparent);
+    box-shadow: -5px 10px 25px 3px black;
+    margin: 3% 0;
+}
+
+.viCanciones{
+    flex-wrap: wrap;
+}
+
+.viCanciones:hover, .viAlbumes:hover, .viArtistas:hover{
+    background: linear-gradient(50deg, lightcoral, lightpink);
+}
+
+.enlaceCancion, .enlaceAlbum, .enlaceArtista{
+    margin: auto 7em;
+    height: 100%;
+}
+
+.enlaceAlbum, .enlaceArtista{
+    width: 100%;
+}
+
+.divPortada, .divFoto{
+    padding: 5px;
+    width: 28%;
+}
+
+.divPortada img, .divFoto img{
+    border: 2px solid gray;
+    width: 10em;
+    height: 10em;
+}
+
+.divAudio{
+    margin: auto 2%;
+}
+/*Fin lista artistas, álbumes, canciones*/
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.25s all;
+}
+
+a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.contenido{
+    margin: 3% 20%;
+}
+
+.esconder{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}

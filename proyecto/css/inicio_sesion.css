@@ -1,0 +1,72 @@
+body{
+    background: linear-gradient(100deg, #121212, gray);
+}
+
+#formularios_sesion{
+    width: 33%;
+    height: 20em;
+    margin: 5% 33%;
+}
+
+#id_iniciarSesion, #id_crearCuenta{
+    height: 100%;
+}
+
+#id_iniciarSesion div, #id_crearCuenta div{
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+#id_iniciarSesion div img, #id_crearCuenta div img{
+    width: 15em;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+}
+
+#id_texto{
+    width: 30%;
+    text-align: center;
+    margin: 7% 35%;
+    font-size: 125%;
+    transition: 0.25s all;
+}
+
+#id_texto:hover{
+    cursor: pointer;
+    color: lightpink;
+    font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=password]{
+    color: white;
+    border: 1px black;
+    padding: 10px;
+    margin: 2%;
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: large;
+    font-weight: 600;
+}
+
+input[type=button]{
+    background-color: gray;
+    border: 2px solid black;
+    color: black;
+    width: 100%;
+    height: 10%;
+    transition: 0.25s all;
+    margin-top: 5%;
+}
+
+input[type=button]:hover{
+    cursor: pointer;
+    background: linear-gradient(50deg, lightcoral, lightpink);
+    box-shadow: -2px -1px 10px 3px black;
+}
+

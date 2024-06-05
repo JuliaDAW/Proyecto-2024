@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="archivos/img/logo.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/inicio_sesion.css">
+    <!--JavaScript-->
+    <script type="text/javascript" src="js/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="js/inicio_sesion.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Letraduccion</a></h1>
+    </header>
+
+    <div id="formularios_sesion">
+        <div id="id_iniciarSesion">
+            <form id="form_inicioSesion">
+                <label for="id_usuario">Nombre o correo:</label><br/>
+                    <input type="text" name="usuario" id="id_usuario"/>
+                    <br/>
+                <label for="id_isContrasenia">Contraseña:</label><br/>
+                    <input type="password" name="contrasenia" id="id_isContrasenia"/>
+                    <br/>
+                <input type="button" name="iniciar" id="id_iniciar" value="Entrar"/>
+            </form>
+        </div>
+        <div id="id_crearCuenta" class="esconder">
+            <form id="form_crearCuenta">
+                <label for="id_nombreU">Nombre de usuario:</label><br/>
+                    <input type="text" name="nombreU" id="id_nombreU"/>
+                    <br/>
+                <label for="id_correo">Correo electrónico:</label><br/>
+                    <input type="email" name="correo" id="id_correo"/>
+                    <br/>
+                <label for="id_contrasenia">Contraseña:</label><br/>
+                    <input type="password" name="contrasenia" id="id_contrasenia"/>
+                    <br/>
+                <label for="id_contrasenia">Repita la contraseña:</label><br/>
+                    <input type="password" name="repContrasenia" id="id_repContrasenia"/>
+                    <br/>
+                <input type="button" name="crear" id="id_crear" value="Resgistrarse"/>
+            </form>
+        </div>
+    </div>
+
+    <div id="id_texto">
+        <p id="id_cambiar" cambiar="crear">¿Todavía no tiene una cuenta? Cree una nueva.</p>
+    </div>
+</body>
+</html>

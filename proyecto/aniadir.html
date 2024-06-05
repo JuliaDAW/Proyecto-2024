@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letraduccion</title>
+    <link rel="shortcut icon" href="archivos/img/logo.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/aniadir_editar_borrar.css">
+    <!--JavaScript-->
+    <script type="text/javascript" src="js/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="js/aniadir.js"></script>
+    <script type="text/javascript" src="js/cerrar_sesion.js"></script>
+    <script type="text/javascript" src="js/session.js"></script>
+</head>
+<body>
+    <input type="hidden" name="tipoU" id="id_tipoU"/>
+    <input type="hidden" name="idU" id="id_idU"/>
+    
+    <header>
+        <h1><a href="index.html">Letraduccion</a></h1>
+        <div class="header3I">
+            <p><a href="area_personal.html" id="id_areaPersonal">Área personal</a></p>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <div id="id_texto">
+            <p class="artista">Artista</p>
+            <p class="album">Album</p>
+            <p class="cancion">Cancion</p>
+        </div>
+        
+        <input type="hidden" id="id_hidden"/>
+        <div class="div_formularios">
+        <!--Formulario para artistas--> 
+            <form id="id_artista" method="post" action="./php/subir_archivos.php" enctype="multipart/form-data" class="esconder">
+                <label for="id_nombre_art">Nombre:</label>
+                    <input type="text" name="nombre_art" id="id_nombre_art"/>
+                    <br/>
+                <label for="id_ocupacion">Es un:</label>
+                    <input type="radio" value="grupo" name="ocupacion" id="id_grupo"> Grupo
+                    <input type="radio" value="solista" name="ocupacion" id="id_solista"/> Solista
+                    <br/>
+                <label for="id_fechaDebut">Año de debut:</label>
+                    <input type="text" name="fechaDebut" id="id_fechaDebut"/>
+                    <br/>
+                <label for="id_pais">País del debut:</label>
+                    <select name="paisDebut" id="id_pais">
+                        <option value="0">--Seleccione un país--</option>
+                    </select>
+                    <br/><br/>
+                <label for="id_informacion">Más información:</label><br/>
+                    <textarea name="información" id="id_informacion"></textarea>
+                    <br/>
+                <label for="id_foto_art">Foto del grupo o artista:</label>
+                    <input type="file" name="foto_art" id="id_foto_art" accept="image/*"/>
+                    <br/>
+                <input type="button" name="aniadir_art" id="id_aniadir_art"  value="Insertar"/>
+            </form>
+            <!--Formulario para albumes--> 
+            <form id="id_album" method="post" action="./php/subir_archivos.php" enctype="multipart/form-data" class="esconder">
+                <label  for="id_titulo_alb">Título:</label>
+                    <input type="text" name="titulo_alb" id="id_titulo_alb"/>
+                    <br/>
+                <label  for="id_nCanciones">Número de canciones:</label>
+                    <input type="text" name="nCanciones" id="id_nCanciones"/>
+                    <br/>
+                <label  for="id_fechaLanzamiento">Fecha de lanzamiento:</label>
+                    <input type="date" name="fechaLanzamiento" id="id_fechaLanzamiento"/>
+                    <br/>
+                <label for="id_artAlb">Artista al que pertenece:</label>
+                    <select id="id_artAlb" name="artAlb">
+                        <option value="elegir">--Seleccione un grupo o artista--</option>
+                    </select>
+                    <br/>
+                <label for="id_foto_alb">Foto de la portada:</label>
+                    <input type="file" name="foto_alb" id="id_foto_alb" accept="image/*"/>
+                    <br/>
+                <input type="button" name="aniadir_alb" id="id_aniadir_alb" value="Insertar"/>
+            </form>
+            <!--Formulario para canciones--> 
+            <form id="id_cancion" method="post" action="./php/subir_archivos.php" enctype="multipart/form-data" class="esconder">
+                <label for="id_titulo_can">Título:</label>
+                    <input type="text" name="titulo_can" id="id_titulo_can"/>
+                    <br/>
+                <label for="id_artCan">Artista al que pertenece:</label>
+                    <select id="id_artCan" name="artCan">
+                        <option value="elegir">--Seleccione un grupo o artista--</option>
+                    </select>
+                    <br/>
+                <label for="id_single">Es un single:</label>
+                    <input type="radio" value="si" name="single" id="id_si"/>Sí
+                    <input type="radio" value="no" name="single" id="id_no"/>No
+                        
+                    <select id="id_albCan" name="albCan" class="esconder">
+                        <option value="elegir">--Seleccione un álbum--</option>
+                    </select>
+                    <br/>
+                <label for="id_idioma">Idioma original:</label>
+                    <select name="idioma" id="id_idioma">
+                        <option value="0">--Seleccione un idioma--</option>
+                    </select>
+                    <br/>
+                <div id="letraduccion">
+                    <div id="div_letra">
+                        <label for="id_letra">Letra:</label><br/>
+                            <textarea name="letra" id="id_letra"></textarea>
+                    </div>
+                    <div id="div_traduccion">
+                        <label for="id_traduccion">Traducción:</label><br/>
+                            <textarea name="traduccion" id="id_traduccion"></textarea>
+                    </div>
+                </div>
+                <label for="id_audio">Audio de la canción:</label>
+                    <input type="file" name="audio" id="id_audio" accept="audio/*"/>
+                    <br/>
+                <input type="button" name="aniadir_can" id="id_aniadir_can" value="Insertar"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

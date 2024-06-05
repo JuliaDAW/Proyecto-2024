@@ -1,0 +1,137 @@
+#id_principal{
+    height: 25em;
+}
+
+#div_datos{
+    padding: 5%;
+}
+
+#id_secundario{
+    margin: 5% 0;
+}
+
+#id_informacionArt{
+    clear: left;
+}
+
+#redesSociales a svg{
+    width: 5em;
+}
+
+.m img{
+    width: 3em;
+}
+
+.m img:hover{
+    cursor: pointer;
+}
+
+#div_visualizar_foto figure, #div_visualizar_portada figure, #div_visualizar_audio figure{
+    float: left;
+    width: 20em;
+    background-color: silver;
+    padding: 1%;
+    text-align: center;
+    box-shadow: -5px 10px 25px 3px black;
+    transition: 0.1s all;
+}
+
+#div_visualizar_foto figure:hover, #div_visualizar_portada figure:hover, #div_visualizar_audio figure:hover{
+    box-shadow: 0px 0px 30px 10px black;
+}
+
+#div_visualizar_foto img, #div_visualizar_portada img{
+    width: 20em;
+    height: 20em;
+    border: 1px solid gray
+}
+
+#div_visualizar_audio figure{
+    height: 22em;
+}
+
+#div_visualizar_audio audio{
+    margin-top: 30%;
+}
+
+#div_visualizar_audio figcaption{
+    margin-top: 10%;
+}
+
+#div_visualizar_foto figcaption, #div_visualizar_portada figcaption, #div_visualizar_audio figcaption{
+    color: black;
+    font-weight: bold;
+}
+
+#id_letraduccion{
+    background-color: white;
+    color: black;
+    box-shadow: -5px 10px 25px 3px black;
+}
+
+#div_lyric{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#div_letra{
+    width: 50%;
+}
+
+#div_traduccion{
+    width: 50%;
+}
+
+.idioma{
+    border-bottom: 1px solid lightcoral;
+}
+
+#letra{
+    border-right: 1px solid lightcoral;
+}
+
+.letraduccion{
+    padding: 5%;
+}
+
+.contenido a:hover{
+    color: lightpink;
+}
+
+.enlaceCancion a:hover, .enlaceAlbum a:hover, .enlaceArtista a:hover{
+    color: black;
+}
+
+h3{
+    margin-left: 3%;
+}
+
+textarea{
+    width: 70%;
+    height: 7em;
+    resize: none;
+    border-radius: 30px;
+    padding: 2%;
+}
+
+textarea::placeholder{
+    text-align: center;
+    font-size: large;
+    padding-top: 6%;
+}
+
+#form_coment{
+    margin: auto;
+}
+
+.coment{
+    border-left: 1px solid lightcoral;
+    padding-left: 2%;
+}
+
+.respuesta{
+    border-left: 1px solid lightpink;
+    margin-left: 5%;
+    padding-left: 2%;
+}

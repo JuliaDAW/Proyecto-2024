@@ -1,0 +1,10 @@
+#mas_recientes, #mas_populares, #guardadas{
+    margin-bottom: 5%;
+    border: 1px solid transparent;
+}
+
+.posicion{
+    margin: auto;
+    margin-left: 2%;
+    font-size: x-large;
+}

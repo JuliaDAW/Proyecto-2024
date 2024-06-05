@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Personal</title>
+    <link rel="shortcut icon" href="archivos/img/logo.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/area_personal.css">
+    <!--JavaScript-->
+    <script type="text/javascript" src="js/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="js/area_personal.js"></script>
+    <script type="text/javascript" src="js/cerrar_sesion.js"></script>
+    <script type="text/javascript" src="js/session.js"></script>
+</head>
+<body>
+    <input type="hidden" name="tipoU" id="id_tipoU"/>
+    <input type="hidden" name="idU" id="id_idU"/>
+    
+    <header>
+        <h1><a href="index.html">Letraduccion</a></h1>
+        <div class="header1">
+            <p><a href="buscar.php?busqueda=artistas">Artistas</a></p>
+            <p><a href="buscar.php?busqueda=albumes">Álbumes</a></p>
+            <p><a href="buscar.php?busqueda=canciones">Canciones</a></p>
+        </div>
+        <div class="header2">
+            <form id="id_form_buscar" action="buscar.php?busqueda=buscar" method="post">
+                <input type="text" name="dBuscar" id="id_busqueda"/>
+                <label id="id_buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                    </svg>
+                </label>
+            </form>
+        </div>
+        <div class="header3I">
+            <p><a href="area_personal.html" id="id_areaPersonal">Área personal</a></p>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <div id="div_mAdmin">
+            <p><a href="aniadir.html" id="id_aniadir">Añadir</a></p>
+            <p><a href="editar_borrar.php?mov=editar" id="id_editar">Editar</a></p>
+            <p><a href="editar_borrar.php?mov=borrar" id="id_borrar">Borrar</a></p>
+            <p><a href="chat.html" id="id_chat">Chat</a></p>
+        </div>
+
+        <div id="div_tabla">
+            <div id="mostrar">
+                <p id="aniadidos">Añadidos</p>
+                <p id="modificados">Modificados</p>
+                <p id="borrados">Borrados</p>
+            </div>
+            <div id="div_ordenar">
+                <input type="button" name="admin" id="id_admin" value="Administrador"/>
+                <input type="button" name="tipoObjeto" id="id_tipoObjeto" value="Tipo de Objeto"/>
+                <input type="button" name="nombreObjeto" id="id_nombreObjeto" value="Nombre del Objeto"/>
+                <input type="button" name="fecha" id="id_fecha" value="Fecha"/>
+            </div>
+            <div id="div_insert">
+                <table id="tabla_insert" border="1px solid" cellspacing="0">
+                    <caption>Añadidos</caption>
+                    <tr>
+                        <th>Administrador</th>
+                        <th>Tipo de objeto</th>
+                        <th>Nombre del objeto</th>
+                        <th>Fecha</th>
+                    </tr>
+                    <tbody id="tbody_aniadir"></tbody>
+                </table>
+            </div>
+            <div id="div_update" class="esconder">
+                <table id="tabla_update" border="1px solid" cellspacing="0">
+                    <caption>Editados</caption>
+                    <tr>
+                        <th>Administrador</th>
+                        <th>Tipo de objeto</th>
+                        <th>Nombre del objeto</th>
+                        <th>Fecha</th>
+                    </tr>
+                    <tbody id="tbody_update"></tbody>
+                </table>
+            </div>
+            <div id="div_delete" class="esconder">
+                <table id="tabla_delete" border="1px solid" cellspacing="0">
+                    <caption>Eliminados</caption>
+                    <tr>
+                        <th>Administrador</th>
+                        <th>Tipo de objeto</th>
+                        <th>Nombre del objeto</th>
+                        <th>Fecha</th>
+                    </tr>
+                    <tbody id="tbody_delete"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
